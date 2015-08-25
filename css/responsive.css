@@ -1,0 +1,78 @@
+/* 480px - size of normal size smartphones 
+this breakpoint targets larger sized smartphones and tablets
+*/
+@media screen and (min-width: 480px) {
+	/***************************
+    2-COLUMN LAYOUT: CONTACT PAGE
+    ***************************/
+    #firstcolumn {
+        width: 50%;
+        float: left;
+    }
+    
+    #secondcolumn {
+        width: 40%;
+        float: right;
+    }
+    
+    /***************************
+    Margins: 2.5% per item/image
+    Per item/image: 2.5% x 2 = 5%
+        3columns x 5%/column = 15%margin
+        100% - 15% = 85%
+        85% / 3 images = 28.3333% width per image/item
+    ***************************/
+    
+    /***************************
+    ITEM/GALLERY 3 COLULMN:
+    FOR MOST PAGES
+    ***************************/
+    #gallery li {
+        width: 28.3333%;
+    }
+    
+    /* styling will be applied for every 4th list item inside #gallery */
+    #gallery li:nth-child(4n) {
+        clear: left;
+    }
+    
+}
+
+/* 660px - breakpoint target for larger-sized tablets, desktops */
+@media screen and (min-width: 660px) {
+    
+    /***************************
+    HEADER
+    ***************************/   	
+    
+    nav {
+        background: none;
+        float: right;
+        font-size: 1.125em;
+        margin-right: 5%;
+        text-align: right;
+        /* width: 45%; >> not included since i've added so many pages*/ 
+    }
+    
+    /* logo - id used for the header anchors/page titles */
+    #logo {
+        float: left;
+        margin-left: 5%;
+        text-align: left;
+        width: 45%;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 0.825em;
+        margin-bottom: 20px;
+    }
+    
+    header {
+        border-bottom: 5px solid #599a68;
+        margin-bottom: 60px;
+    }
+}
